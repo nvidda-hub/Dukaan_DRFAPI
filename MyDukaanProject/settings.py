@@ -27,6 +27,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
+AUTH_USER_MODEL = 'API_Side.Account'
 
 # Application definition
 
@@ -38,7 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
-    'API_Side'
+    'API_Side',
+    'rest_framework.authtoken',
 ]
 
 MIDDLEWARE = [
